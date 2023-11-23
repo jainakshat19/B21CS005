@@ -147,7 +147,7 @@ These are the following states a process can take
 3. Sleeping: Waiting for a particular event or condition.
 4. Zombie: Execution completed . Waiting for parent to call for results
 ## A13
-- XV6 has an heirarchial file system structure,consisting of directories, files, and inodes similar to Linux. Inodes  store metadata about files and their data block locations. Directories correspond to folders where other directories of files are located.
+XV6 has an heirarchial file system structure,consisting of directories, files, and inodes similar to Linux. Inodes  store metadata about files and their data block locations. Directories correspond to folders where other directories of files are located.
 ## A14
 - System calls are interfaces provided by the operating system that allow user-level processes to request services from the kernel. eg. kill, which can be used to kill a particular process.
 - Library functions are sets of pre-compiled routines provided by libraries that applications can link to. eg printf() which may use some write() system call to do its stuff.
@@ -159,7 +159,7 @@ In XV6, memory paging is a technique used for virtual memory management. Memory 
 -echo : Used to print something directly to the terminal
 -mkdir : Used to make a new Directory
 ## A17
-
+Process synchronization in XV6, a simple Unix-like operating system, is vital to manage shared resources among concurrent processes. It ensures proper coordination and prevents race conditions or data inconsistencies. XV6 uses mechanisms like locks, semaphores, and condition variables to achieve synchronization. Locks restrict access to shared data, semaphores control access to a specific number of resources, and condition variables allow processes to wait until a particular condition is met. These tools maintain order, preventing conflicts and ensuring reliable inter-process communication.
 ## A18
 In the XV6 operating system, interrupts play a crucial role in managing system events and ensuring timely responses to them. When hardware or software triggers an interrupt (such as a timer, I/O operation completion, or hardware error), the processor suspends its current execution, saves its state, and jumps to a predefined interrupt handler. This handler processes the interrupt, performs necessary actions (like servicing I/O requests), and resumes the interrupted task. Interrupts enhance system efficiency by enabling multitasking, allowing the system to promptly handle external events without wasting CPU cycles constantly checking for them.
 ## A19
