@@ -117,3 +117,51 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 
 ## Answers
 Please write your answers here
+
+A1
+- b. A Unix-like operating system
+A2
+ - b. Linux
+A3
+- d. simple
+A4
+- d. As external programs
+A5
+- a. 128
+A6
+- c. Sh
+A7
+- a. Round-robin scheduling
+A8
+- a. Paging
+A9
+- d. Both b and c
+A10
+- b. No
+A11
+- c. MIT
+A12
+These are the following states a process can take
+1.Running: currently being executed.
+2.Runnable: Ready to run but is waiting for CPU allocation. 
+3. Sleeping: Waiting for a particular event or condition.
+4. Zombie: Execution completed . Waiting for parent to call for results
+A13
+- XV6 has an heirarchial file system structure,consisting of directories, files, and inodes similar to Linux. Inodes  store metadata about files and their data block locations. Directories correspond to folders where other directories of files are located.
+A14
+- System calls are interfaces provided by the operating system that allow user-level processes to request services from the kernel. eg. kill, which can be used to kill a particular process.
+- Library functions are sets of pre-compiled routines provided by libraries that applications can link to. eg printf() which may use some write() system call to do its stuff.
+- Library Functions are usually at a higher level of abstractions than system calls
+A15
+In XV6, memory paging is a technique used for virtual memory management. Memory paging in XV6 divides physical memory into fixed-size pages and maps virtual pages of a process to physical pages via page tables. On a memory access, the CPU consults the page table; if the required page isn't in physical memory, a page fault triggers the OS to load the page. Paging offers benefits like virtual memory expansion beyond physical limits, memory protection, simplified management, non-contiguous memory allocation, and support for sharing via copy-on-write. This technique facilitates efficient memory utilization, security, and simpler memory handling in the operating system, enabling processes to access larger virtual memory spaces without requiring contiguous physical memory.
+A16
+-ls : lists all directories and files in the current working directory
+-echo : Used to print something directly to the terminal
+-mkdir : Used to make a new Directory
+A17
+
+A18
+In the XV6 operating system, interrupts play a crucial role in managing system events and ensuring timely responses to them. When hardware or software triggers an interrupt (such as a timer, I/O operation completion, or hardware error), the processor suspends its current execution, saves its state, and jumps to a predefined interrupt handler. This handler processes the interrupt, performs necessary actions (like servicing I/O requests), and resumes the interrupted task. Interrupts enhance system efficiency by enabling multitasking, allowing the system to promptly handle external events without wasting CPU cycles constantly checking for them.
+A19
+Virtual memory is a memory management technique that extends physical memory by using disk space as an extension. In XV6, virtual memory is implemented through memory paging, dividing both physical and virtual memory into fixed-size pages and mapping them via page tables. XV6 handles page faults, loading required pages from disk to memory. Advantages of virtual memory include efficient memory utilization, memory protection, larger address spaces for processes, and simplified memory management.
+A20
